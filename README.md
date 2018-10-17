@@ -12,10 +12,19 @@ Aside from the libraries listed in the requirements.txt file, I used the followi
 *  Selenium 3.14.1
 
 ## Usage
+### Before anything else..
 Update the first 3 lines of the `info.txt` file with the following information (should be in the same order):
 *  企業コード (Company Code)
 *  社員番号 (Employee Number)
 *  パスワード (Password)
 
-The `timein.py` script opens up a Google Chrome browser, loads the e-PayStamp log-in page, logs in automatically using the information in the `info.txt` file and clicks the 出勤 button to clock-in the user's time in.
-The `timeout.py` does the same thing except that it clicks the 退勤 button instead to clock-in the user's time out.
+### Command line syntax
+```
+py timeinout.py in
+```
+Logs in and clicks the 出勤 button to register user's time in.
+
+```
+py timeinout.py out
+```
+Logs in and clicks the 退勤 button to register user's time out.
