@@ -83,7 +83,7 @@ class TimeInOut(object):
 
         if outstatus == "":
             # For time out
-            browser.find_element_by_id("btnDakoku4").click()
+            self.browser.find_element_by_id("btnDakoku4").click()
             #print("Click out!")
         else:
             print("Time out already registered.")
