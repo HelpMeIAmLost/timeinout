@@ -16,5 +16,6 @@ Update the first 3 lines of the `info.txt` file with the following information (
 *  企業コード (Company Code)
 *  社員番号 (Employee Number)
 *  パスワード (Password)
+
 The `timein.py` script opens up a Google Chrome browser, loads the e-PayStamp log-in page, logs in automatically using the information in the `info.txt` file and clicks the 出勤 button to clock-in the user's time in.
 The `timeout.py` does the same thing except that it clicks the 退勤 button instead to clock-in the user's time out.
